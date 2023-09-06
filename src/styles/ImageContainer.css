@@ -1,0 +1,219 @@
+/* ImageContainer.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.computer-frame {
+    /* Ajustez la hauteur du cadre selon vos besoins */
+    border: 2px solid #3498db;
+    /* Couleur de la bordure */
+    border-radius: 10px;
+    /* Rayon des coins arrondis */
+    padding: 10px;
+    /* Espace à l'intérieur de la bordure */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    background-color: #f2f2f2;
+    /* Couleur de fond */
+    color: #333;
+    /* Couleur du texte à l'intérieur de la bordure */
+}
+
+img {
+    max-width: 2000px; /* Ajustez la largeur maximale de l'image au cadre */
+    max-height: 1100px;
+    /* Ajustez la hauteur maximale de l'image au cadre */
+}
+
+
+
+.grid-container {
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ImageContainer.css */
+
+
+
+
+
+/* Ajoutez une media query pour ajuster le style en fonction de la largeur de l'écran */
+@media screen and (max-width: 768px) {
+    .computer-frame {
+        width: 400px;
+        height: 300px;
+    }
+
+    .computer-frame img {
+        top: 7%;
+        left: 8%;
+        width: 78%;
+        height: 68%;
+    }
+}
+
+
+.AccueilProjet {
+    width: 90%;
+
+    margin: 0 50px;
+}
+
+.projets {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.projet h4 {
+    color: #042a1a;
+}
+
+.projet {
+
+
+    background-color: #f7f3f3;
+    margin-right: 20px;
+    max-width: 27%;
+    margin-bottom: 20px 0;
+    border-radius: 20px;
+    box-shadow: 25px;
+
+
+}
+
+.AccueilProjet h2 {
+    margin-bottom: 10px;
+    border-bottom: solid 2px #877c7c;
+
+
+}
+
+.description {
+
+    width: 90%;
+    color: #0b4055;
+
+}
+
+@media screen and (max-width:1200px) {
+
+
+    .AccueilProjet .projets .projet {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .AccueilEnTete h1 {
+        font-size: 1em;
+    }
+}
+
+/* styles.css */
+
+
+
+
+.Pretraitement {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #042a1a;
+    ;
+    color: #fff;
+}
+
+
+
+.Architecture,
+.AutomatisationCreationModeles,
+.ModeleML {
+    width: 90%;
+    margin: 0 50px;
+}
+
+.Architecture table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .Architecture table {
+        width: 100%;
+    }
+
+    .Architecture table th,
+    .Architecture table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .Architecture table th {
+        text-align: center;
+        background-color: #f2f2f2;
+    }
+
+    .Architecture table td {
+        text-align: left;
+    }
+}
+
+
+/* Ajoutez une media query pour ajuster le style en fonction de la largeur de l'écran */
+@media screen and (max-width: 608px) {
+    table {
+        font-size: 14px;
+        /* Ajustez la taille de la police si nécessaire */
+    }
+
+    th,
+    td {
+        padding: 6px;
+        /* Ajustez l'espacement des cellules si nécessaire */
+    }
+}

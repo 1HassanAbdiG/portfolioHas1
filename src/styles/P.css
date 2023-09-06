@@ -1,0 +1,149 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Position relative pour le pseudo-élément 
+    
+
+    background-color: #130429;
+    border-top: solid   #29f5c7; /* Supprimez la bordure existante */
+    font-size: 1.3rem; /* Ajoutez la taille de police appropriée */
+    color: #29f5c7;
+    font-family: "lobster", cursive;
+    margin-top: 20px;
+   
+}
+.container h1 {
+    padding: 5px 30px;
+    border: none; /* Supprimez la bordure existante */
+    font-size: 1.3rem; /* Ajoutez la taille de police appropriée */
+    color: #29f5c7;
+    font-family: "lobster", cursive;
+    position: relative; /* Position relative pour le pseudo-élément ::before */
+  }
+  
+  .container h1::before {
+    content: "";
+    position: absolute;
+    top: -15px; /* Ajustez la position du triangle vers le haut */
+    left: 50%;
+    transform: translateX(-50%); /* Centre le triangle horizontalement */
+    border-width: 0 300px 15px 300px; /* Agrandissez le triangle en largeur et en hauteur */
+    border-style: solid;
+    border-color: transparent transparent #29f5c7 transparent; /* Couleur de la bordure du triangle */
+    box-shadow: 0 6px 6px rgba(245, 246, 246, 0.2); /* Ajoute une ombre en haut */
+  }
+ 
+  
+  
+.project-page{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    border-bottom: solid   #29f5c7;;
+}
+
+
+
+/* ProjectPage.css */
+
+
+h1 {
+    font-size: 36px;
+    /* Augmenter la taille du titre */
+    margin-bottom: 20px;
+    color: #2c7873;
+}
+
+
+img{
+    width: 400px;
+    height: 400px;
+   
+    margin-left : auto !important;
+    margin-right :auto! important;
+    border-radius: 30px;
+
+}
+
+
+  
+ 
+  
+
+
+.project-image  {
+    max-width: 90%;;
+    
+    
+    /* Limiter la hauteur de l'image */
+    margin:  20px;
+   
+
+    /* Marge à droite de l'image */
+}
+
+
+.project-description {
+    
+    max-width: 700px;
+    /* Ajuster la largeur à 100% pour les petits écrans */
+    text-align: left;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.project-description p {
+   
+    width: 100%;
+    font-size: 23px;
+    /* Augmenter la taille du texte */
+    line-height: 1.5;
+    color: #769a9a;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 60px;
+    border: solid 2px #29f5c7;
+    
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button::after {
+    content: "→";
+    margin-left: 5px;
+}
+
+/* Ajouter une règle de média query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .container{
+        margin-top: 50px;
+    }
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-description .project-image img {
+        max-width: 100%;
+    }
+
+.project-page{    
+    margin: 10px;
+}
+}

@@ -1,0 +1,150 @@
+/* Styles for ProjetWeb component */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 4rem; /* Augmentation de la marge à gauche et à droite */
+    
+    padding: 2rem;
+}
+.divtext {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes égales */
+     /* Ajoute un espacement entre les éléments */
+}
+.explicat li{
+    color: #229ba4;
+    
+}
+.header p{
+    color: #229ba4;
+}
+.p{
+    color: #229ba4;
+    
+
+}
+
+p {
+   width: 100%;
+   margin: 10px;
+}
+
+
+.entete img {
+    width: 100%;
+}
+
+.gauche {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+}
+
+.droite {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.droite ul {
+    font-size: 15px;
+    background-color:  #29f5c7;
+    border-radius: 300px;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+}
+
+/* New styles for ProjetWeb component */
+
+.conteneurProjetWeb {
+    margin: 5%;
+}
+
+.graphique1 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+    grid-template-rows: auto; /* Une ligne de hauteur automatique */
+}
+
+.graphique1 img {
+    border: solid 2px  #29f5c7;
+    width: 100%; /* Réglez la largeur des images à 100% pour qu'elles soient responsives */
+    max-width: 1500px; /* Limitez la largeur maximale des images pour qu'elles aient la même taille */
+    height: 600; /* Ajustez automatiquement la hauteur pour maintenir les proportions */
+    border-radius: 20px;
+}
+
+.doubleHeight {
+    grid-row: span 2; /* Occupe deux lignes */
+     /* Limitez la largeur maximale des images pour qu'elles aient la même taille */
+    height: 600px;
+}
+h2{
+    color:  #29f5c7;
+}
+
+
+/* Titreweb styles */
+
+.titreweb {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(7, 119, 55);
+    width: 25%;
+    color: rgb(241, 234, 234);
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+/* Projet2 styles */
+
+
+
+.partie {
+    width: 45%;
+    margin: 30px;
+}
+
+/* PhotoResto styles */
+
+.photoResto {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,  1fr); /* Réorganisation des images pour qu'elles soient responsives */
+    justify-items: center; 
+}
+
+.photoResto img {
+    border: solid 2px #29f5c7;
+    width: 100%; /* Réglez la largeur des images à 100% pour qu'elles soient responsives */
+    max-width: 800px; /* Limitez la largeur maximale des images pour qu'elles aient la même taille */
+    height: 200px; /* Ajustez automatiquement la hauteur pour maintenir les proportions */
+    border-radius: 20px}
+
+@media screen and (max-width: 700px) {
+    .partie {
+        width: 100%;
+    }
+}
+
+/* Responsive styles for the entire container */
+@media screen and (max-width: 768px) {
+    .gauche {
+        width: 100%;
+    }
+
+    .droite {
+        width: 100%;
+    }
+    .photoResto {
+        grid-template-columns: auto;
+    }
+}

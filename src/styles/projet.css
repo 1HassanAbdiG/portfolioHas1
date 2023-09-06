@@ -1,0 +1,140 @@
+/****partie2***/
+.projet {
+    width: 100%;
+
+    position: static;
+}
+
+.projet h1 {
+
+    font-size: 35px;
+    color: #fff !important;
+    font-family: "labster", cursive;
+    text-align: center;
+    padding: 10px 0px;
+
+
+}
+
+
+.categorie_boite {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 20PX;
+
+}
+
+.caterogrie_unique {
+
+    width: 30%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    margin-bottom: 10px;
+    color: #29f5c7;
+
+
+    border-radius: 50px;
+    box-shadow: 4px #29f5c7, -1em 2em #140a34;
+
+
+}
+
+img {
+    width: 500px;
+    height: 300px;
+}
+
+
+.caterogrie_unique img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text_hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 8), #dad2d200);
+
+    opacity: 0.5;
+    transition: 0.6 ease-in;
+
+}
+
+hr {
+    width: 60%;
+    margin: 10px auto;
+}
+
+.description {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    opacity: 0;
+    transition: 0.6s ease-in;
+
+
+}
+
+
+.description .btn {
+
+    padding: 5px 30px;
+    border: 2px solid #29f5c7;
+    ;
+    font-size: 1.3;
+    color: #4f4a86;
+    font-family: "lobster", cursive;
+    transition: ease-in;
+
+}
+
+.description .btn:hover {
+    background: #130429;
+    color: #29f5c7;
+}
+
+.description p {
+    margin: 12px;
+    color: #ffff;
+    font-weight: bold;
+
+}
+
+.caterogrie_unique:hover .text_hover {
+    opacity: 1;
+}
+
+.caterogrie_unique:hover .description {
+    opacity: 1;
+    bottom: 25%;
+}
+
+@media screen and (max-width:900px) {
+    .categorie_boite {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+
+
+    }
+
+    .caterogrie_unique {
+        width: 60%;
+    }
+
+    .description .btn {
+        font-size: 12px;
+    }
+
+}
